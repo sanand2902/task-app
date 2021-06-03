@@ -1,5 +1,6 @@
 const _update = document.getElementById('update')
 const _logout = document.getElementById('logout')
+const _back = document.getElementById('back')
 
 const password = document.getElementById("password");
 const password2 = document.getElementById("password2");
@@ -183,3 +184,9 @@ const ui = async ()=>{
 ui();
 
 
+
+
+_back.addEventListener('click', e=>{
+  e.preventDefault()
+  location.replace('index.html')
+})
